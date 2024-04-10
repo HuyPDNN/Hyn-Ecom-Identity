@@ -1,0 +1,565 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HynEcom.IdentityServer</name>
+    </assembly>
+    <members>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.BusinessObject.Id">
+            <summary>
+            Get or set Id
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.BusinessObject.Code">
+            <summary>
+            Get or set Code
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.BusinessObject.Name">
+            <summary>
+            Get or set Name
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.BusinessObject.DateOfBirth">
+            <summary>
+            Get or set DateOfBirth
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.BusinessObject.Email">
+            <summary>
+            Get or set Email
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.BusinessObject.Phone">
+            <summary>
+            Get or set Phone
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.BusinessObject.Address">
+            <summary>
+            Get or set Address
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.BusinessObject.Description">
+            <summary>
+            Get or set Description
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.BusinessObject.IsActive">
+            <summary>
+            Get or set IsActive
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.BusinessObject.IsDeleted">
+            <summary>
+            Get or set IsDeleted
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.BusinessObjectUser.Id">
+            <summary>
+            Get or set Id
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.BusinessObjectUser.UserId">
+            <summary>
+            Get or set UserId
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.BusinessObjectUser.BusinessObjectId">
+            <summary>
+            Get or set BusinessObjectId
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.BusinessObjectUser.IsActive">
+            <summary>
+            Get or set IsActive
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.BusinessObjectUser.IsDeleted">
+            <summary>
+            Get or set IsDeleted
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.BusinessObjectUser.BusinessObject">
+            <summary>
+            Get or set BusinessObject
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.BusinessObjectUser.User">
+            <summary>
+            Get or set User
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.Permission.Id">
+            <summary>
+            get or set Id permission
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.Permission.Name">
+            <summary>
+            get or set Name permission
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.Permission.ProviderName">
+            <summary>
+            get or set ProviderName permission
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.Permission.ProviderKey">
+            <summary>
+             get or set ProviderKey permission
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.Permission.IsDeleted">
+            <summary>
+            get or set IsDeleted permission
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.Role.Id">
+            <summary>
+            get or set Id
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.Role.Name">
+            <summary>
+            get or set Name
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.Role.Description">
+            <summary>
+            get or set Description
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.Role.IsDefault">
+            <summary>
+            get or set IsDefault
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.Role.IsStatic">
+            <summary>
+            get or set IsStatic
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.Role.IsPublic">
+            <summary>
+            get or set IsPublic
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.Role.IsDeleted">
+            <summary>
+            get or set IsDeleted
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.User.Id">
+            <summary>
+            get or set Id
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.User.UserName">
+            <summary>
+            get or set UserName
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.User.Password">
+            <summary>
+            get or set Password
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.User.PasswordHash">
+            <summary>
+            get or set PasswordHash
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.User.IsDeleted">
+            <summary>
+            get or set IsDeleted
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.UserRole.Id">
+            <summary>
+            get or set Id
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.UserRole.UserId">
+            <summary>
+            get or set UserId
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.UserRole.RoleId">
+            <summary>
+            get or set RoleId
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.EntityFrameworkCore.Entities.UserRole.IsDeleted">
+            <summary>
+            get or set IsDeleted
+            </summary>
+        </member>
+        <member name="T:HynEcom.IdentityServer.Migrations.Initdatabase">
+            <inheritdoc />
+        </member>
+        <member name="M:HynEcom.IdentityServer.Migrations.Initdatabase.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HynEcom.IdentityServer.Migrations.Initdatabase.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HynEcom.IdentityServer.Migrations.Initdatabase.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectUserRequest.Id">
+            <summary>
+            Get or set Id
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectUserRequest.UserId">
+            <summary>
+            Get or set UserId
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectUserRequest.BusinessObjectId">
+            <summary>
+            Get or set BusinessObjectId
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectUserRequest.IsActive">
+            <summary>
+            Get or set IsActive
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectUserRequest.IsDeleted">
+            <summary>
+            Get or set IsDeleted
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectUserRequest.BusinessObject">
+            <summary>
+            Get or set BusinessObject
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectUserRequest.User">
+            <summary>
+            Get or set User
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectUserResponse.Id">
+            <summary>
+            Get or set Id
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectUserResponse.UserId">
+            <summary>
+            Get or set UserId
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectUserResponse.BusinessObjectId">
+            <summary>
+            Get or set BusinessObjectId
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectUserResponse.IsActive">
+            <summary>
+            Get or set IsActive
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectUserResponse.IsDeleted">
+            <summary>
+            Get or set IsDeleted
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectUserResponse.BusinessObject">
+            <summary>
+            Get or set BusinessObject
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectUserResponse.User">
+            <summary>
+            Get or set User
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectRequest.Code">
+            <summary>
+            Get or set Code
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectRequest.Name">
+            <summary>
+            Get or set Name
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectRequest.DateOfBirth">
+            <summary>
+            Get or set DateOfBirth
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectRequest.Email">
+            <summary>
+            Get or set Email
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectRequest.Phone">
+            <summary>
+            Get or set Phone
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectRequest.Address">
+            <summary>
+            Get or set Address
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectRequest.Description">
+            <summary>
+            Get or set Description
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectRequest.IsActive">
+            <summary>
+            Get or set IsActive
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectRequest.IsDeleted">
+            <summary>
+            Get or set IsDeleted
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectResponse.Id">
+            <summary>
+            Get or set Id
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectResponse.Code">
+            <summary>
+            Get or set Code
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectResponse.Name">
+            <summary>
+            Get or set Name
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectResponse.DateOfBirth">
+            <summary>
+            Get or set DateOfBirth
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectResponse.Email">
+            <summary>
+            Get or set Email
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectResponse.Phone">
+            <summary>
+            Get or set Phone
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectResponse.Address">
+            <summary>
+            Get or set Address
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectResponse.Description">
+            <summary>
+            Get or set Description
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectResponse.IsActive">
+            <summary>
+            Get or set IsActive
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.BusinessObjectResponse.IsDeleted">
+            <summary>
+            Get or set IsDeleted
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.PermissionRequest.Id">
+            <summary>
+            get or set Id permission
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.PermissionRequest.Name">
+            <summary>
+            get or set Name permission
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.PermissionRequest.ProviderName">
+            <summary>
+            get or set ProviderName permission
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.PermissionRequest.ProviderKey">
+            <summary>
+             get or set ProviderKey permission
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.PermissionResponse.Id">
+            <summary>
+            get or set Id permission
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.PermissionResponse.Name">
+            <summary>
+            get or set Name permission
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.PermissionResponse.ProviderName">
+            <summary>
+            get or set ProviderName permission
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.PermissionResponse.ProviderKey">
+            <summary>
+             get or set ProviderKey permission
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.RoleRequest.Id">
+            <summary>
+            get or set Id Role
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.RoleRequest.Name">
+            <summary>
+            get or set Name Role
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.RoleRequest.Description">
+            <summary>
+            get or set Description Role
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.RoleRequest.IsDefault">
+            <summary>
+            get or set IsDefault Role
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.RoleRequest.IsStatic">
+            <summary>
+            get or set IsStatic Role
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.RoleRequest.IsPublic">
+            <summary>
+            get or set IsPublic Role
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.RoleResponse.Id">
+            <summary>
+            get or set Id Role
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.RoleResponse.Name">
+            <summary>
+            get or set Name Role
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.RoleResponse.Description">
+            <summary>
+            get or set Description Role
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.RoleResponse.IsDefault">
+            <summary>
+            get or set IsDefault Role
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.RoleResponse.IsStatic">
+            <summary>
+            get or set IsStatic Role
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.RoleResponse.IsPublic">
+            <summary>
+            get or set IsPublic Role
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.UserRoleRequest.UserId">
+            <summary>
+            get or set UserId user role
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.UserRoleRequest.RoleId">
+            <summary>
+            get or set RoleId user role
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.UserRoleResponse.UserId">
+            <summary>
+            get or set UserId user role
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.UserRoleResponse.RoleId">
+            <summary>
+            get or set RoleId user role
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.UserRequest.Id">
+            <summary>
+            get or set Id of user
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.UserRequest.Name">
+            <summary>
+            get or set Name of user
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.UserRequest.Email">
+            <summary>
+            get or set Email of user
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.UserRequest.UserName">
+            <summary>
+            get or set UserName of user
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.UserRequest.Password">
+            <summary>
+            get or set Password of user
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.UserRequest.PasswordHash">
+            <summary>
+            get or set PasswordHash user
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.UserRequest.PhoneNumber">
+            <summary>
+             get or set PhoneNumber user
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.UserResponse.Id">
+            <summary>
+            get or set Id of user
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.UserResponse.Name">
+            <summary>
+            get or set Name of user
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.UserResponse.Email">
+            <summary>
+            get or set Email of user
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.UserResponse.UserName">
+            <summary>
+            get or set UserName of user
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.UserResponse.Password">
+            <summary>
+            get or set Password of user
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.UserResponse.PasswordHash">
+            <summary>
+            get or set PasswordHash user
+            </summary>
+        </member>
+        <member name="P:HynEcom.IdentityServer.Models.UserResponse.PhoneNumber">
+            <summary>
+             get or set PhoneNumber user
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\HynEcom.IdentityServer.props" />
+</Project>
