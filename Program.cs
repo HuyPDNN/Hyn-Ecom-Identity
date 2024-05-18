@@ -12,7 +12,8 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
-HynEcomIdentityServerModule.UseSwaggerSpec(app);
+if (app.Environment.IsDevelopment())
+    HynEcomIdentityServerModule.UseSwaggerSpec(app);
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -27,7 +28,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

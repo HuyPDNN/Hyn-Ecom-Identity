@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using HynEcom.IdentityServer.Models;
+using HynEcom.IdentityServer.Models.BaseService;
 
 namespace HynEcom.IdentityServer.IdentityServer
 {
@@ -12,6 +13,9 @@ namespace HynEcom.IdentityServer.IdentityServer
 
             //BusinessObject
             builder.Services.AddTransient<IBusinessObjectService, BusinessObjectService>();
+
+            //BaseService
+            builder.Services.AddTransient<IBaseService, BaseService>();
         }
     }
 }
