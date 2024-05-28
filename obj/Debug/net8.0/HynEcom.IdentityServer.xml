@@ -206,6 +206,24 @@
         <member name="M:HynEcom.IdentityServer.Migrations.Initdatabase.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
+        <member name="M:HynEcom.IdentityServer.Models.BaseService.BaseService.MultipleSoftDeteledAsync(System.Collections.Generic.List{System.Guid},System.String,System.String)">
+            <summary>
+            Multiple soft deleted data by id - Change IsDeleted = true
+            </summary>
+            <param name="listId"></param>
+            <param name="dbSchema"></param>
+            <param name="tblName"></param>
+            <returns>true :: success | false :: fail</returns>
+        </member>
+        <member name="M:HynEcom.IdentityServer.Models.BaseService.BaseService.MultipleHardDeteledAsync(System.Collections.Generic.List{System.Guid},System.String,System.String)">
+            <summary>
+            Multiple hard deleted data by id - delete from database
+            </summary>
+            <param name="listId"></param>
+            <param name="dbSchema"></param>
+            <param name="tblName"></param>
+            <returns>true :: success | false :: fail</returns>
+        </member>
         <member name="P:HynEcom.IdentityServer.Models.BusinessObjectUserRequest.Id">
             <summary>
             Get or set Id
