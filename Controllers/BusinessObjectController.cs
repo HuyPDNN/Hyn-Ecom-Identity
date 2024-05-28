@@ -23,7 +23,7 @@ namespace HynEcom.IdentityServer.Controllers
 
         [HttpGet]
         [Route("get-paging")]
-        public async Task<IActionResult> GetDataPaging(PagedResultRequest request)
+        public async Task<IActionResult> GetDataPagingAsync(PagedResultRequest request)
         {
             if (request == null) throw new ArgumentNullException(nameof(request));
 
@@ -32,7 +32,7 @@ namespace HynEcom.IdentityServer.Controllers
 
         [HttpGet]
         [Route("get-by-ids")]
-        public async Task<IActionResult> GetDataByIds(List<Guid> ids)
+        public async Task<IActionResult> GetDataByIdsAsync(List<Guid> ids)
         {
             if (ids == null) throw new ArgumentNullException(nameof(ids));
 
