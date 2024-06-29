@@ -9,14 +9,18 @@ namespace HynEcom.IdentityServer.IdentityServer
 {
     public static class HynEcomIdentityServerModule
     {
+        private const string DefaultCorsPolicyName = "DefaultCorsPolicy";
         public static void RegisterService(WebApplicationBuilder builder)
         {
+            ConfigurationManager configuration = builder.Configuration; // allows both to access and to set up the config
+            IWebHostEnvironment environment = builder.Environment;
+
             builder.Services.AddSession();
 
             builder.Services.AddAutoMapper(cfg => cfg.AddProfile(new ApplicationAutoMapperProfile()));
 
             builder.Services.AddDbContext<HynEcomIdentityDbContext>(option => option
-                            .UseNpgsql(builder.Configuration.GetConnectionString("Default")));
+                            .UseNpgsql(configuration.GetConnectionString("Default")));
 
             builder.Services.AddMemoryCache();
 
@@ -51,7 +55,6 @@ namespace HynEcom.IdentityServer.IdentityServer
             {
                 options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
             });
-
         }
 
         public static void UseSwaggerSpec(WebApplication app)

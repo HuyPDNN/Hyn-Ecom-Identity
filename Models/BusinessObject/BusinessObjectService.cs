@@ -33,17 +33,19 @@ namespace HynEcom.IdentityServer.Models
                 var _connection = _dbContext.Database.GetDbConnection();
 
                 var result = await _connection.QueryAsync(
-                        Enum.Function.BusinessObject.fn_insert_business_object,
+                        "SELECT * FROM fn_insert_business_object(@_id, @_code, @_name, @_date_of_birth, @_email, @_phone, @_address, @_description, @_is_active, @_is_deleted)",
                         param: new
                         {
+                            _id = Guid.NewGuid(),
                             _code = request.Code,
                             _name = request.Name,
                             _date_of_birth = request.DateOfBirth,
-                            _email = request.Email,
+                            _email = request.Email,  
                             _phone = request.Phone,
                             _address = request.Address,
                             _description = request.Description,
                             _is_active = request.IsActive,
+                            _is_deleted = request.IsDeleted,
                         },
                         commandType: CommandType.Text
                     );

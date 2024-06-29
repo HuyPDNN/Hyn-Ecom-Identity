@@ -3,6 +3,8 @@ using HynEcom.IdentityServer.IdentityServer;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var configuration = builder.Configuration;
+
 HynEcomIdentityServerModule.RegisterService(builder);
 
 DependencyInjection.RegisterDI(builder);
@@ -23,13 +25,15 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
+app.UseCors(policy => policy.AllowAnyHeader().AllowAnyMethod()
+                            .SetIsOriginAllowed(_ => true).AllowCredentials());
+
 app.UseRouting();
-app.UseAuthentication();
-app.UseAuthorization();
+//app.UseAuthentication();
+//app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",

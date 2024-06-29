@@ -55,6 +55,23 @@ namespace HynEcom.IdentityServer.Controllers
             }
         }
 
+        //[HttpPost]
+        //[Route("update-async")]
+        //public async Task<IActionResult> UpdateAsync([FromBody] BusinessObjectRequest request)
+        //{
+        //    try
+        //    {
+        //        if (request == null) throw new ArgumentNullException(nameof(request));
+
+        //        return Ok(await _iBusinessObjectService.UpdateAsync(request));
+        //    }
+
+        //    catch (Exception)
+        //    {
+        //        return BadRequest();
+        //    }
+        //}
+
         [HttpDelete]
         [Route("hard-delete-nultiple")]
         public async Task<IActionResult> MultipleHardDeteledAsync(List<Guid> ids)
